@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Sign up</h2>
+  <form method="post">
+    {% csrf_token %}
+    {% for field in form %}
+      <p>
+        {{ field.label_tag }}
+        {{ field }}
+        {% if field.help_text %}
+          <small style="color: grey">more than 8 characters and alpha-numeric.</small>
+        {% endif %}
+        {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
+      </p>
+    {% endfor %}
+    <button type="submit">Sign up</button>
+    <p>After sign up you would be able to login if admin accepts you as a member.</p>
+  </form>
+{% endblock %}

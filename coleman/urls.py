@@ -13,14 +13,18 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
+from django.contrib.auth import views as auth_views
+from coleman.core import views as core_views
 from django.urls import path
 from django.conf import settings
 from django.http import HttpResponseRedirect
 
 urlpatterns = [
-    url(r'^$', lambda r: HttpResponseRedirect('admin/')),   # Remove this redirect if you add custom views
+    url(r'^signup/$', core_views.signup, name='signup'),
+    path(r'', core_views.welcome, name='welcome'),
+    #url(r'^$', lambda r: HttpResponseRedirect('admin/')),   # Remove this redirect if you add custom views
     path('admin/', admin.site.urls),
 ]
 
