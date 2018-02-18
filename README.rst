@@ -10,8 +10,8 @@ Features
 
 * A simple task management web app for teams.
 
-.. image:: docs/source/_static/img/django-coleman.png
-   :alt: Django Coleman
+.. image:: docs/source/_static/img/Screenshot%20(24).png
+   :alt: Django Success Plus
 
 
 Requirements
@@ -99,7 +99,7 @@ execute to compile the locales::
 About
 -----
 
-**Project**: https://github.com/mayankshekhar03/success-plus
+**Project**: https://github.com/mayankshekhar03/furry-happiness
 
 **Authors**: (2017-2018) Mayank Shekhar <mayankshekhar03@gmail.com> with special thanks to Mariano Ruiz <mrsarm@gmail.com>
 
