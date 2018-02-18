@@ -24,37 +24,8 @@ Requirements
   the Python's built-in SQLite database for development purpose).
 
 
-Install and Run
----------------
 
-Install dependencies with::
 
-    $ pip install -r requirements.txt
-    $ pip install -r requirements-dev.txt       # For DEV environments
-
-Create the database with::
-
-    $ python3 manage.py makemigrations
-    $ python3 manage.py makemigrations mtasks
-    $ python3 manage.py migrate
-
-To create an admin user::
-
-    $ python3 manage.py createsuperuser
-
-Then run in development mode with::
-
-    $ python3 manage.py runserver
-
-Or use the script to startup in the same mode::
-
-    $ ./run.sh dev
-
-Some settings can be overwritten with environment variables.
-For example to overwrite the language translations of the application and
-set *debug* options to false::
-
-    $ DEBUG=False LANGUAGE_CODE=es-ar python3 manage.py runserver
 
 Available settings to override are:
 

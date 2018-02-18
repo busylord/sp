@@ -10,6 +10,7 @@ myvenv/
 
 # Compiled messages
 *.mo
+extra info.txt
 
 # Log files
 *.log
