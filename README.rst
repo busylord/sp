@@ -1,19 +1,14 @@
 Django Coleman
 ==============
 
-Django Coleman: A very simple Task Management web app written
-with **Django Admin**.
+Task Management webapp 
+with **Django Admin** and modified version of Coleman.
 
 
 Features
 --------
 
-* Simple task manager that allows to define a tasks with title,
-  description, responsible of the task, priority...
-* Each task may have items: sub-tasks to be done.
-* The built-in Django *Authentication and Authorization* system
-  to manage users and groups, login, etc.
-* Spanish translations.
+* A simple task management web app for teams.
 
 .. image:: docs/source/_static/img/django-coleman.png
    :alt: Django Coleman
@@ -77,7 +72,7 @@ see the official Django documentation.
 Access the application
 ----------------------
 
-Like any Django app developed with Django Admin, enter with: http://localhost:8000/admin
+Like any Django app developed with Django Admin, enter with: http://localhost:8000
 
 
 Development
@@ -100,19 +95,12 @@ execute to compile the locales::
     $ django-admin compilemessages
 
 
-Oldest Django versions
-----------------------
-
-The Branch ``django/1.11`` has the django-coleman source code
-that works with Django 1.11, and maybe tweaking some configurations
-can works with oldest versions too.
-
 
 About
 -----
 
-**Project**: https://github.com/mrsarm/django-coleman
+**Project**: https://github.com/mayankshekhar03/success-plus
 
-**Authors**: (2017-2018) Mariano Ruiz <mrsarm@gmail.com>
+**Authors**: (2017-2018) Mayank Shekhar <mayankshekhar03@gmail.com> with special thanks to Mariano Ruiz <mrsarm@gmail.com>
 
 **License**: AGPL-v3
