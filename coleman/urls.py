@@ -24,6 +24,7 @@ from django.http import HttpResponseRedirect
 urlpatterns = [
     url(r'^signup/$', core_views.signup, name='signup'),
     path(r'', core_views.welcome, name='welcome'),
+    path(r'about/', core_views.about, name='about'),
     #url(r'^$', lambda r: HttpResponseRedirect('admin/')),   # Remove this redirect if you add custom views
     path('admin/', admin.site.urls),
 ]
