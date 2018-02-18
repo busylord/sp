@@ -6,6 +6,7 @@
 
 # Staticfiles
 staticfiles/
+myvenv/
 
 # Compiled messages
 *.mo
