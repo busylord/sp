@@ -1,13 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand">Success Plus</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/about">About</a>
+        <a class="nav-link" href="/admin">Sign in</a>
+      </nav>
+    </div>
+  </header>
+  <main role="main" class="inner cover">
   <h2>Sign up</h2>
   <form method="post">
     {% csrf_token %}
     {% for field in form %}
       <p>
-        {{ field.label_tag }}
-        {{ field }}
+        {{ field.label_tag }} <br>
+        {{ field }} <br>
         {% if field.help_text %}
           <small style="color: grey">more than 8 characters and alpha-numeric.</small>
         {% endif %}
@@ -16,7 +28,14 @@
         {% endfor %}
       </p>
     {% endfor %}
-    <button type="submit">Sign up</button>
+    <button type="submit">Sign up</button><br>
     <p>After sign up you would be able to login if admin accepts you as a member.</p>
   </form>
+  </main>
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Made by Mayank Shekhar and Arjun Singh Kalsi</p>
+    </div>
+  </footer>
+</div>
 {% endblock %}

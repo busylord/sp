@@ -133,3 +133,4 @@ STATIC_ROOT = BASE_DIR + '/static/'
 #
 
 SITE_HEADER = os.environ.get('SITE_HEADER', 'Success Plus Dashboard')
+LOGOUT_REDIRECT_URL = '/'
