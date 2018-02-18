@@ -1,4 +1,4 @@
-Django Coleman
+Task Management web app
 ==============
 
 Task Management webapp 
