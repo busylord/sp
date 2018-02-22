@@ -31,3 +31,5 @@ urlpatterns = [
 ]
 
 admin.site.site_header = settings.SITE_HEADER
+admin.site.site_title = settings.SITE_TITLE
+admin.site.index_title = settings.INDEX_TITLE
