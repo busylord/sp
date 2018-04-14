@@ -26,7 +26,7 @@ urlpatterns = [
     path(r'', core_views.welcome, name='welcome'),
     path(r'^about/$', core_views.about, name='about'),
     #url(r'^$', lambda r: HttpResponseRedirect('admin/')),   # Remove this redirect if you add custom views
-    path('dashboard/', admin.site.urls),
+    path(r'dashboard/', admin.site.urls),
     #url(r'^logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'})
 ]
 
