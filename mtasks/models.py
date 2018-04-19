@@ -26,7 +26,7 @@ class Task(models.Model):
 
     title = models.CharField(_("title"), max_length=200)
     description = models.TextField(_("description"), max_length=2000, null=True, blank=True)
-    resolution = models.TextField(_("resolution"), max_length=2000, null=True, blank=True)
+    resolution = models.TextField(_("resolution and feedback"), max_length=2000, null=True, blank=True)
     deadline = models.DateField(_("deadline"), null=True, blank=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='tasks_assigned', verbose_name=_('assigned to'),
                                    on_delete=models.SET_NULL, null=True, blank=True)
