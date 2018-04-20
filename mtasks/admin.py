@@ -21,7 +21,7 @@ class TaskAdmin(admin.ModelAdmin):
     autocomplete_fields = ['user']
 
     fieldsets = (               # Edition form
-        (None,                   {'fields': ('title', ('user', 'deadline'), ('state', 'priority'), ('description', 'resolution'))}),
+        (None,                   {'fields': ('title', ('user', 'deadline'), ('state', 'priority'), ('description', 'resolution', 'feedback'))}),
         (_('More...'), {'fields': (('created_at', 'last_modified'), 'created_by'), 'classes': ('collapse',)}),
     )
     inlines = [ItemInline]
